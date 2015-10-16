@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+		<!-- Name Label -->
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#43bd00"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingTop="6dip"
+            android:paddingBottom="2dip"
+            android:paddingLeft="20dp"
+            android:gravity="left" />
+		<!-- Description label -->
+        <!-- Linear layout for cost and price Cost: Rs.100 -->
+    </LinearLayout>
+

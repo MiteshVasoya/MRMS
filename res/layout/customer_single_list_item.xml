@@ -1,0 +1,374 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#000000" >
+
+    
+        <!-- Logo Start -->
+<LinearLayout
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/letter_head"
+        android:paddingBottom="5dip"
+        android:paddingTop="5dip" >
+
+        <!-- Logo Start -->
+<RelativeLayout 
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_marginRight="23dp">
+        <ImageView
+            android:id="@+id/back_to_homepage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="23dp"
+            android:contentDescription="@string/hello"
+            android:src="@drawable/back_button" />
+
+        <ImageView
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="2dp"
+            android:contentDescription="@string/hello"
+            android:src="@drawable/m"
+            android:id="@+id/logo" />
+        
+        <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/logo"
+        android:layout_toRightOf="@+id/back_to_homepage"
+        android:gravity="center"
+        android:text="@string/MyCust"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:typeface="monospace" />
+        
+     </RelativeLayout>   
+        
+        <!-- Logo Ends -->
+    </LinearLayout>   
+        
+        <!-- Logo Ends -->
+    
+   <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:layout_above="@+id/footer"
+    android:layout_below="@+id/header"
+    android:background="@drawable/letter_middle"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+<LinearLayout
+  
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content">
+  <!-- Name Label -->
+  <LinearLayout 
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+  <TextView android:text="Name :"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:paddingRight="7dp"
+            android:textColor="#3002A6"/>
+  <EditText android:id="@+id/name_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"/>
+  </LinearLayout>
+  
+  <LinearLayout 
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:gravity="center">
+  <TextView android:text="Code :"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:paddingRight="7dp"
+            android:textColor="#3002A6"/>
+      <EditText android:id="@+id/code"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"/>
+ </LinearLayout>
+      
+    <LinearLayout 
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:gravity="center">
+  <TextView android:text="Type :"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:paddingRight="7dp"
+            android:textColor="#3002A6"/>
+        <EditText android:id="@+id/type"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"/>
+ </LinearLayout>
+        
+    <LinearLayout 
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:gravity="center">
+  <TextView android:text="Address 1 :"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:paddingRight="7dp"
+            android:textColor="#3002A6"/>
+          <EditText android:id="@+id/add1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"/>
+ </LinearLayout>
+          
+    <LinearLayout 
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:gravity="center">
+  <TextView android:text="Address 2 :"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:paddingRight="7dp"
+            android:textColor="#3002A6"/>
+            <EditText android:id="@+id/add2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"/>
+ </LinearLayout>
+            
+    <LinearLayout 
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:gravity="center">
+  <TextView android:text="Address 3 :"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:paddingRight="7dp"
+            android:textColor="#3002A6"/>
+              <EditText android:id="@+id/add3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"/>
+  </LinearLayout>
+ 
+    <LinearLayout 
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:gravity="center">
+  <TextView android:text="State :"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:paddingRight="7dp"
+            android:textColor="#3002A6"/>
+                <Spinner android:id="@+id/state"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            />
+ </LinearLayout>
+ 
+    <LinearLayout 
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:gravity="center">
+  <TextView android:text="City :"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:paddingRight="7dp"
+            android:textColor="#3002A6"/>
+              <Spinner android:id="@+id/city"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            />
+ </LinearLayout>
+ 
+    <LinearLayout 
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:gravity="center">
+  <TextView android:text="Pincode :"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:paddingRight="7dp"
+            android:textColor="#3002A6"/>
+                  <EditText android:id="@+id/pincode"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"/>
+ </LinearLayout>
+ 
+    <LinearLayout 
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:gravity="center">
+  <TextView android:text="Telephone (Res.) :"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:paddingRight="7dp"
+            android:textColor="#3002A6"/>
+                    <EditText android:id="@+id/tel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"/>
+ </LinearLayout>
+ 
+    <LinearLayout 
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:gravity="center">
+  <TextView android:text="Mobile :"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:paddingRight="7dp"
+            android:textColor="#3002A6"/>
+                      <EditText android:id="@+id/mobile"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"/>
+ </LinearLayout>
+ 
+            <LinearLayout 
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:gravity="center">
+  <TextView android:text="Nearest Bus-Stop :"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:paddingRight="7dp"
+            android:textColor="#3002A6"/>
+    <EditText android:id="@+id/bus_stop"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"/>
+ </LinearLayout>
+ 
+                <LinearLayout 
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:gravity="center">
+  <TextView android:text="Nearest Railway-Station :"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:paddingRight="7dp"
+            android:textColor="#3002A6"/>
+      <EditText android:id="@+id/railway_station"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"/>
+ </LinearLayout>
+ 
+                    <LinearLayout 
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:gravity="center">
+  <TextView android:text="Landmark :"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:paddingRight="7dp"
+            android:textColor="#3002A6"/>
+  <EditText android:id="@+id/landmark"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"/>
+ </LinearLayout>
+  
+                    
+<LinearLayout 
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_gravity="center">
+    
+    <Button
+    android:id="@+id/update"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Update"
+    android:width="112dp" />
+    
+    <Button
+    android:id="@+id/cancel"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Cancel"
+    android:width="112dp" />
+    
+</LinearLayout>
+               
+<LinearLayout 
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_gravity="center">
+    
+    <Button
+    android:id="@+id/addImage"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Add Image"
+    android:width="73dp" />
+    
+    <Button
+    android:id="@+id/addMemo"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Add Memo"
+    android:width="73dp" />
+    
+    <Button
+    android:id="@+id/alert"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Alert Settings"
+    android:width="79dp" />
+    
+</LinearLayout>
+
+</LinearLayout>
+
+</ScrollView>
+</LinearLayout>
+<LinearLayout
+    android:id="@+id/footer"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:orientation="horizontal"
+    android:background="@drawable/letter_tail" >
+
+
+</LinearLayout>
+</RelativeLayout>

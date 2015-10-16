@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:background="@drawable/back_wallpaper"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+android:gravity="center_horizontal"
+ >
+
+<RelativeLayout
+    android:layout_width="250dp"
+    android:layout_height="45dp"
+    android:background="@drawable/back_wallpaper"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+     >
+
+    <TextView
+        android:id="@+id/tvMapStoreName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/ivMapGo"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="@string/test"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/activity_horizontal_margin"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/ivMapGo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/aero"
+        android:contentDescription="@string/app_name" />
+
+    <TextView
+        android:id="@+id/tvMapStoreDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvMapStoreName"
+        android:layout_below="@+id/tvMapStoreName"
+        android:lines="1"
+        android:text="@string/mile"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:textStyle="normal" />
+
+</RelativeLayout>
+
+
+
+</LinearLayout>

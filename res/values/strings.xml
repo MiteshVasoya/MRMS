@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">M! 8</string>
+    <string name="id">Login ID</string>
+    <string name="pwd">Password</string>
+    <string name="lgn">Login</string>
+    <string name="txt">New to M!8? Register here</string>
+    <string name="lgn_txt">Login-ID</string>
+    <string name="pwd_txt">Password</string>
+    <string name="MyLoc">My Location</string>
+    <string name="MyPlace">My Places</string>
+    <string name="txtmemo">Add Text-Memo</string>
+    <string name="MyVisit">My Visit</string>
+    <string name="MyCust">My Customer</string>
+    <string name="MyTeam">My Team</string>
+    <string name="test">test test test</string>
+    <string name="mile">100 Miles</string>
+    <string name="newCust">Add New Customer</string>
+    <string name="newPlace">Add New Place</string>
+    <string name="newVisit">Add New Visit</string>
+    <string name="text">Enter Text Here</string>
+    <string name="save">Save</string>
+    <string name="txtmemoimg">Upload Image</string>
+    <string name="homepage">Homepage</string>
+    <string name="hello"/>
+    <string name="memo">Memo</string>
+</resources>

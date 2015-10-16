@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.mit.loginandregister"
+      android:versionCode="1"
+      android:versionName="1.0">
+      <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+      <uses-permission  android:name="android.permission.ACCESS_NETWORK_STATE"/>
+      <uses-permission  android:name="android.permission.CHANGE_NETWORK_STATE"/>
+          <uses-permission android:name="android.permission.INTERNET" />
+<uses-feature android:name="android.hardware.camera" />
+<uses-permission android:name="android.permission.CAMERA" />
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <permission
+        android:name="com.mit.loginandregister.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature"></permission>
+    <uses-permission
+        android:name="com.mit.loginandregister.permission.MAPS_RECEIVE"/>
+    <uses-permission
+        android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission
+        android:name="android.permission.INTERNET"/>
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true"/>
+
+
+    <application 
+        android:icon="@drawable/icon" 
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar"
+        android:screenOrientation="portrait">
+        <activity android:name="com.mit.loginandregister.LoginActivity"
+                  android:label="Login to your Account"
+                  
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        
+        <activity android:name="com.mit.loginandregister.HomepageActivity"
+        		  android:label="Homepage"
+        		  android:screenOrientation="portrait"></activity>
+        
+                <meta-data  android:name="com.google.android.maps.v2.API_KEY"
+			android:value="AIzaSyDD5g_rzTlRbFfcRLBkQBde7SOQzwJhh8U"/>
+        
+        <activity
+            android:name="com.mit.loginandregister.MyLocation"
+            android:label="@string/MyLoc"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.mit.loginandregister.MyCustomer"
+            android:label="@string/MyCust"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.mit.loginandregister.MyPlaces"
+            android:label="@string/MyPlace"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.mit.loginandregister.MyVisit"
+            android:label="@string/MyVisit"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.mit.loginandregister.AddTextMemo"
+            android:label="@string/txtmemo"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+                
+        <activity
+            android:name="com.mit.loginandregister.MyTeam"
+            android:label="@string/MyTeam"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.mit.loginandregister.TextMemo_Image"
+            android:label="@string/txtmemoimg"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>    
+        <activity
+            android:name="com.mit.loginandregister.TextMemo_Text"
+            android:label="@string/txtmemo"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>    
+        
+        <activity
+            android:name="com.mit.loginandregister.CustomerSingleListItem"
+            android:label="@string/MyCust"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+             >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> 
+        
+        <activity
+            android:name="com.mit.loginandregister.customer_textmemo"
+            android:label="@string/txtmemo"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> 
+        
+        <activity
+            android:name="com.mit.loginandregister.customer_image"
+            android:label="@string/txtmemoimg"
+            android:screenOrientation="portrait"
+             >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> 
+        
+        <activity
+            android:name="com.mit.loginandregister.customer_alert"
+            android:label="@string/MyCust"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> 
+        
+        <activity
+            android:name="com.mit.loginandregister.PlacesSingleListItem"
+            android:label="@string/MyPlace"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+             >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> 
+        
+        <activity
+            android:name="com.mit.loginandregister.VisitsSingleListItem"
+            android:label="@string/MyVisit"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+             >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> 
+        
+        <activity
+            android:name="com.mit.loginandregister.place_textmemo"
+            android:label="@string/MyPlace"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+             >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> 
+
+                <activity
+            android:name="com.mit.loginandregister.place_image"
+            android:label="@string/MyPlace"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+             >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+                <service android:name=".MyService" />
+    </application>
+</manifest>

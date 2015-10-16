@@ -1,0 +1,307 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#000000" >
+
+    <!-- Header  Starts -->
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/letter_head"
+        android:paddingBottom="5dip"
+        android:paddingTop="5dip" >
+
+        <!-- Logo Start -->
+<RelativeLayout 
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_marginRight="23dp">
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="23dp"
+            android:contentDescription="@string/hello"
+            android:src="@drawable/m" />
+
+        <ImageView
+            android:id="@+id/logout"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="2dp"
+            android:contentDescription="@string/hello"
+            android:src="@drawable/gnome_session_logout" />
+        
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@id/logout"
+            android:layout_toRightOf="@id/logo"
+            android:gravity="center"
+            android:text="@string/homepage"
+            android:textColor="#ffffff"           
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:typeface="monospace" />
+        
+     </RelativeLayout>   
+        
+        <!-- Logo Ends -->
+    </LinearLayout>
+    <!-- Header Ends -->
+    <!-- Footer Start -->
+
+
+    <!-- Footer Ends -->
+
+
+    <!-- Login Form -->
+    <!-- Login Form Ends -->
+
+    <LinearLayout
+    android:id="@+id/footer"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:orientation="horizontal"
+    android:background="@drawable/letter_tail" >
+
+
+</LinearLayout>
+
+    <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:layout_above="@+id/footer"
+    android:layout_below="@+id/header"
+    android:background="@drawable/letter_middle"
+    android:orientation="vertical" >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footer"
+        android:layout_below="@+id/header" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/my_location"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="@drawable/txtview_cstm"
+                android:gravity="center"
+                android:orientation="horizontal"
+    			android:paddingLeft="7dp"
+    			android:paddingRight="7dp"
+                 >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="15dp"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/MyLoc"
+                    android:textColor="#1500FA"
+                    android:textSize="23sp"
+                    android:textStyle="italic"
+                    android:typeface="serif"
+                        android:gravity="center" />
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="0dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/target_loc" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/my_customer"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/header"
+                android:background="@drawable/txtview_cstm"
+                android:gravity="center"
+                android:orientation="horizontal"
+    			android:paddingLeft="7dp"
+    			android:paddingRight="7dp" >
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/mycustomer" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/MyCust"
+                    android:textColor="#1500FA"
+                    android:textStyle="italic"
+                    android:textSize="23sp"
+                    android:typeface="serif"
+                        android:gravity="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/my_visit"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/my_places"
+                android:background="@drawable/txtview_cstm"
+                android:gravity="center"
+                android:orientation="horizontal"
+    			android:paddingLeft="7dp"
+    			android:paddingRight="7dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/MyVisit"
+                    android:textColor="#1500FA"
+                    android:textStyle="italic"
+                    android:textSize="25sp"
+                    android:typeface="serif"
+                        android:gravity="center" />
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/myvisit" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/my_team"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/header"
+                android:background="@drawable/txtview_cstm"
+                android:gravity="center"
+                android:orientation="horizontal"
+    			android:paddingLeft="7dp"
+    			android:paddingRight="7dp" >
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/our_team_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/MyTeam"
+                    android:textColor="#1500FA"
+                    android:textStyle="italic"
+                    android:textSize="25sp"
+                    android:typeface="serif"
+                        android:gravity="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/my_places"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/header"
+                android:background="@drawable/txtview_cstm"
+                android:gravity="center"
+                android:orientation="horizontal"
+    			android:paddingLeft="7dp"
+    			android:paddingRight="7dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/MyPlace"
+                    android:textColor="#1500FA"
+                    android:textStyle="italic"
+                    android:textSize="25sp"
+                    android:typeface="serif"
+                        android:gravity="center" />
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/myplaces" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/my_textmemo"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/header"
+                android:background="@drawable/txtview_cstm"
+                android:gravity="center"
+                android:orientation="horizontal"
+    			android:paddingLeft="7dp"
+    			android:paddingRight="7dp" >
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/textmemo" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/txtmemo"
+                    android:textColor="#1500FA"
+                    android:textStyle="italic"
+                    android:textSize="22sp"
+                    android:typeface="serif"
+                        android:gravity="center" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+	</LinearLayout>
+</RelativeLayout>

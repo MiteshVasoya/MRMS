@@ -1,0 +1,153 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#000000" >
+
+    <!-- Header  Starts -->
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/letter_head"
+        android:paddingBottom="5dip"
+        android:paddingTop="5dip" >
+
+        <!-- Logo Start -->
+<RelativeLayout 
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_marginRight="23dp">
+        <ImageView
+            android:id="@+id/back_to_homepage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="23dp"
+            android:contentDescription="@string/hello"
+            android:src="@drawable/back_button" />
+
+        <ImageView
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="2dp"
+            android:contentDescription="@string/hello"
+            android:src="@drawable/m"
+            android:id="@+id/logo" />
+        
+        <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/logo"
+        android:layout_toRightOf="@+id/back_to_homepage"
+        android:gravity="center"
+        android:text="@string/memo"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:typeface="monospace" />
+        
+     </RelativeLayout>   
+        
+        <!-- Logo Ends -->
+    </LinearLayout>
+    <!-- Header Ends -->
+    <!-- Footer Start -->
+
+
+    <!-- Footer Ends -->
+
+
+    <!-- Main Form -->
+    
+    <!-- Main Form Ends -->
+
+<LinearLayout
+    android:id="@+id/footer"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:orientation="horizontal"
+    android:background="@drawable/letter_tail" >
+
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:layout_above="@+id/footer"
+    android:layout_below="@+id/header"
+    android:background="@drawable/letter_middle"
+    android:orientation="vertical" >
+
+        <ScrollView 
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        
+<LinearLayout
+    android:id="@+id/CentarPart"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="2dp"
+    android:layout_marginLeft="2dp"
+    android:layout_marginRight="2dp"
+    android:layout_marginTop="2dp"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/Memo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="5dp"
+        android:inputType="textMultiLine"
+        android:background="@drawable/txt_back"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:lines="6"
+        android:hint="@string/text"
+        android:textColorHint="#000000" >
+
+        <requestFocus />
+    </EditText>
+    
+    <Button
+						    android:id="@+id/save"
+						    android:layout_width="150dp"
+						    android:layout_height="wrap_content"
+						    android:layout_marginBottom="10dp"
+						    android:layout_marginTop="10dp"
+						    android:textColor="#000000"
+						    android:background="@drawable/btn_login2"
+						    android:gravity="center"
+						    android:text="@string/save"
+						    android:typeface="serif" />
+    
+    <Button
+        android:id="@+id/addimg"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_login2"
+        android:gravity="center"
+        android:text="Upload Image"
+        android:textColor="#000000"
+        android:typeface="serif"
+        android:visibility="invisible" />
+    
+</LinearLayout>
+
+</ScrollView>
+    </LinearLayout>
+</RelativeLayout>
